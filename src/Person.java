@@ -22,8 +22,11 @@ public class Person {
             person.spouse = this;
             this.spouse = person;
             System.out.println("Свадьба " + person.spouse.name + " c " + this.spouse.name);
+            return true;
         }
-        return person.man != man ? true : false;
+        else {
+            return false;
+        }
     }
 
     public boolean divorce() {
@@ -31,7 +34,10 @@ public class Person {
             System.out.println("Развод " + spouse.spouse.name + " c " + this.spouse.name);
             spouse.spouse = null;
             this.spouse = null;
+            return true;
         }
-        return this.spouse != null ? true : false;
+        else {
+            return false;
+        }
     }
 }
