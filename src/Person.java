@@ -38,19 +38,7 @@ public class Person {
             return false;
         }
     }
-    public boolean check() {
-        if(name == null) {
-            return false;
-        }
-        if(spouse == null) {
-            return true;
-        }
-        if(spouse.spouse != this) {
-            return false;
-        }
-        if(spouse.man == man) {
-            return false;
-        }
-        return true;
+    public Person getSpouse() {
+        return spouse;
     }
 }

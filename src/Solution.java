@@ -10,16 +10,20 @@ public class Solution {
         Person n5 = new Person(false, "Mangura");
 
         n4.divorce();
+        System.out.println(n4.getSpouse());
         n3.marry(n2);
+        System.out.println(n3.getSpouse());
+        System.out.println(n2.getSpouse());
         n3.marry(n2);
+        System.out.println(n2.getSpouse());
+        System.out.println(n3.getSpouse());
         n4.marry(n1);
+        System.out.println(n4.getSpouse());
+        System.out.println(n1.getSpouse());
         n5.marry(n4);
+        System.out.println(n5.getSpouse());
+        System.out.println(n4.getSpouse());
         n1.divorce();
-        n4.divorce();
-        n4.marry(n3);
-        n4.check();
-        n3.check();
-        n5.check();
-        n1.check();
+        System.out.println(n1.getSpouse());
     }
 }
