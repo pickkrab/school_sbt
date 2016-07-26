@@ -17,5 +17,9 @@ public class Solution {
         n1.divorce();
         n4.divorce();
         n4.marry(n3);
+        n4.check();
+        n3.check();
+        n5.check();
+        n1.check();
     }
 }
